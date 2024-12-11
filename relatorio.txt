@@ -1,0 +1,67 @@
+Diego Miranda 2210996 3WA
+Felipe Cancella 2210487 3WA
+
+Ao final do projeto todas as funçoes de leitura e execução de código na linguagem Simples
+
+Os casos de teste foram pensado da seguinte maneira.
+retorno apenas de um valor. (1)
+  ret $100
+  
+associar um valor a uma variável e a retornar. (2)
+  v1 < $99
+  ret v1
+  
+associar um parâmetro a uma variável e a retornar. (3)
+  v1 < p1
+  v2 < p2
+  ret v2
+
+realizar todas as operações com variáveis e valores. (4)
+  v1 < p1
+  v2 = v1 + v1
+  v3 = v2 + $2
+  v4 = $2 - v3
+  v5 = v3 * $3
+  ret v4
+  
+utilizar o comando iflez para linhas posteriores. (5, 6)
+  v1 < p1
+  v2 = v1 + $2
+  v3 = v2 + $10
+  v4 = v3 * $3
+  iflez v4 7
+  ret v4
+  ret $1
+  
+utilizar o comando iflez para linhas anteriores. (7)
+  v1 < p1      
+  v2 < $1      
+  v3 < $0      
+  iflez v1 8   
+  v2 = v2 * v1 
+  v1 = v1 - $1 
+  iflez v3 4   
+  ret v2
+  
+realizar algumas funções específicas, como fatorial. (7)
+  v1 < p1      
+  v2 < $1      
+  v3 < $0      
+  iflez v1 8   
+  v2 = v2 * v1 
+  v1 = v1 - $1 
+  iflez v3 4   
+  ret v2
+
+associar parâmetros para variáveis fora de ordem. (8)
+  v1 < p2
+  v2 < p3
+  v3 < p1
+  v4 = v1 + v2
+  ret v4
+
+Com isso, acreditamos que todas os tipos de resultados foram aboradados com o mínimo de casos de testes possíveis.
+
+A função de teste resulta em uma mensagem informando o número de ações que falharam (Total de falhas X de 8), além de uma mensagem personalizada para alguma funcao que nao bata com o gabarito (Erro no teste Y).
+
+  
